@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+    background: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+section .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .side#side1 {
+    background: rgb(82, 182, 43);
+    clip-path: inset(0 60% 0 0);
+}
+
+section .side#side2 {
+    background: rgb(245, 14, 33);
+    clip-path: inset(0 0 0 40%);
+}
+
+.herb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: url(images/armillary-sphere.png);
+    background-size: cover;
+    width: 502px;
+    height: 502px;
+}
+
+.herb img {
+    width: 275px;
+    height: 275px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    section .side#side1 {
+        clip-path: inset(0 50% 0 0);
+    }
+    
+    section .side#side2 {
+        clip-path: inset(0 0 0 50%);
+    }
+
+    .herb {
+        position: relative;
+        top: 20%;
+        left: 0;
+        width: 195px;
+        height: 195px;
+    }
+    
+    .herb img {
+        width: 105px;
+        height: 105px;
+    }
+
+    body {
+        background: url(images/bg2.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
