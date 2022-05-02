@@ -70,9 +70,9 @@ section .side#side2 {
     .herb {
         position: relative;
         top: 20%;
-        left: 0;
-        width: 195px;
-        height: 195px;
+        left: 5px;
+        width: 180px;
+        height: 180px;
     }
     
     .herb img {
