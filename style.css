@@ -9,9 +9,9 @@
 body {
     height: 300vh;
     background: url(images/bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
 }
 
 section {
@@ -82,8 +82,5 @@ section .side#side2 {
 
     body {
         background: url(images/bg2.jpg);
-        background-position: bottom;
-        background-size: cover;
-        background-attachment: fixed;
     }
 }
